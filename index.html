@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Penerimaan Peserta Didik Baru (PPDB) SD Muhammadiyah 001 Melak Tahun Ajaran 2026/2027.">
+    <title>PPDB SD Muhammadiyah 001 Melak - TA 2026/2027</title>
+    
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        muhBlue: '#0F2C59',
+                        muhBlueLight: '#1E40AF',
+                        muhGold: '#F59E0B',
+                        muhGoldDark: '#D97706',
+                        muhGreen: '#10B981',
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Phosphor Icons CDN -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #F8FAFC;
+        }
+        .gradient-muh {
+            /* Latar belakang warna gradient khas Muhammadiyah */
+            background: linear-gradient(135deg, #0F2C59 0%, #1E3A8A 60%, #1E40AF 100%);
+        }
+        .card-shadow {
+            box-shadow: 0 10px 25px -5px rgba(15, 44, 89, 0.08);
+        }
+    </style>
+</head>
+<body class="text-slate-800 antialiased selection:bg-muhGold selection:text-white">
+
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm">
+        <nav class="container mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <a href="#" class="flex items-center gap-3">
+                <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-muhBlue text-white flex items-center justify-center font-extrabold text-lg shadow-md border-2 border-muhGold">
+                    <i class="ph ph-sun text-2xl text-muhGold"></i>
+                </div>
+                <div>
+                    <span class="block text-xs font-semibold text-muhGold uppercase tracking-wider">Muhammadiyah</span>
+                    <h1 class="text-base sm:text-lg font-bold text-muhBlue leading-tight">SD Muhammadiyah 001 Melak</h1>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Menu -->
+            <div class="hidden md:flex items-center gap-6 text-sm font-semibold text-slate-600">
+                <a href="#beranda" class="hover:text-muhBlue transition-colors">Beranda</a>
+                <a href="#keunggulan" class="hover:text-muhBlue transition-colors">Keunggulan</a>
+                <a href="#galeri" class="hover:text-muhBlue transition-colors">Galeri</a>
+                <a href="#informasi" class="hover:text-muhBlue transition-colors">Informasi PPDB</a>
+                <a href="#cek-status" class="hover:text-muhBlue transition-colors">Cek Pendaftaran</a>
+            </div>
+
+            <!-- Action Button -->
+            <div class="hidden sm:flex items-center gap-3">
+                <a href="#formulir" class="bg-muhGold hover:bg-muhGoldDark text-white font-bold text-sm px-5 py-2.5 rounded-xl shadow-md transition-all flex items-center gap-2">
+                    <i class="ph ph-note-pencil text-lg"></i>
+                    <span>Daftar Sekarang</span>
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button id="menuToggle" class="md:hidden p-2 text-slate-700 hover:text-muhBlue focus:outline-none">
+                <i class="ph ph-list text-2xl"></i>
+            </button>
+        </nav>
+
+        <!-- Mobile Drawer -->
+        <div id="mobileDrawer" class="hidden md:hidden bg-white border-t border-slate-100 px-6 py-4 space-y-3 shadow-lg">
+            <a href="#beranda" class="block font-medium text-slate-700 hover:text-muhBlue py-1">Beranda</a>
+            <a href="#keunggulan" class="block font-medium text-slate-700 hover:text-muhBlue py-1">Keunggulan</a>
+            <a href="#galeri" class="block font-medium text-slate-700 hover:text-muhBlue py-1">Galeri Kegiatan</a>
+            <a href="#informasi" class="block font-medium text-slate-700 hover:text-muhBlue py-1">Informasi PPDB</a>
+            <a href="#cek-status" class="block font-medium text-slate-700 hover:text-muhBlue py-1">Cek Status</a>
+            <a href="#formulir" class="block text-center bg-muhGold text-white font-bold py-2.5 rounded-xl mt-2">Daftar Sekarang</a>
+        </div>
+    </header>
+
+    <!-- Hero Banner -->
+    <section id="beranda" class="gradient-muh text-white py-16 sm:py-20 relative overflow-hidden bg-muhBlue">
+        
+        <!-- =========================================================================
+             GAMBAR 1: BACKGROUND UTAMA DI HALAMAN PERTAMA (HERO)
+             Ganti URL di bawah dengan link foto gedung sekolah/kegiatan besar sekolah
+             ========================================================================= -->
+        <div class="absolute inset-0 bg-[url('https://cdn.jsdelivr.net/gh/faudyadam77-tech/Kumpulan-gambar@main/berdua_ayunan.jpg')] bg-cover bg-center mix-blend-overlay opacity-20"></div>
+        
+        <div class="absolute -right-20 -bottom-20 w-80 h-80 bg-white/5 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-10 items-center">
+                
+                <!-- Hero Left Text -->
+                <div class="lg:col-span-7 space-y-5 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 border border-white/20 text-xs sm:text-sm font-medium text-amber-300">
+                        <i class="ph ph-sparkle text-base"></i>
+                        <span id="txtBannerStatus">Penerimaan Peserta Didik Baru TA 2026/2027</span>
+                    </div>
+
+                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight">
+                        Membentuk Generasi Cerdas, <span class="text-muhGold">Berprestasi & Berakhlaq Mulia</span>
+                    </h2>
+
+                    <p class="text-slate-200 text-sm sm:text-base leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                        Selamat datang di portal resmi PPDB <strong>SD Muhammadiyah 001 Melak</strong>, Kabupaten Kutai Barat. Kami siap mendidik putra-putri Anda dengan fondasi Al-Islam, Tahfizh Qur'an, dan ilmu pengetahuan modern.
+                    </p>
+
+                    <!-- Hero Quick CTAs -->
+                    <div class="flex flex-wrap justify-center lg:justify-start gap-4 pt-2">
+                        <a href="#formulir" class="bg-muhGold hover:bg-muhGoldDark text-white font-bold px-7 py-3.5 rounded-xl shadow-lg transition-all flex items-center gap-2">
+                            <i class="ph ph-user-plus text-xl"></i>
+                            <span>Isi Formulir Online</span>
+                        </a>
+                        <a id="btnWaHero" href="#" target="_blank" class="bg-white/10 hover:bg-white/20 border border-white/30 text-white font-semibold px-6 py-3.5 rounded-xl backdrop-blur-md transition-all flex items-center gap-2">
+                            <i class="ph ph-whatsapp-logo text-xl text-emerald-400"></i>
+                            <span>Tanya Panitia (WA)</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Hero Right Summary Box -->
+                <div class="lg:col-span-5">
+                    <div class="bg-white text-slate-800 rounded-3xl p-6 sm:p-8 card-shadow border border-slate-100 space-y-4">
+                        <div class="border-b border-slate-100 pb-4">
+                            <span class="text-xs font-bold text-muhGold uppercase">Informasi Sekolah</span>
+                            <h3 class="text-xl font-bold text-muhBlue" id="txtNamaSekolah">SD Muhammadiyah 001 Melak</h3>
+                            <p class="text-xs text-slate-500 mt-1" id="txtAlamatSekolah">Kecamatan Melak, Kabupaten Kutai Barat</p>
+                        </div>
+
+                        <div class="space-y-3 text-xs sm:text-sm">
+                            <div class="flex justify-between py-1 border-b border-slate-50">
+                                <span class="text-slate-500">NPSN:</span>
+                                <strong class="text-slate-800" id="txtNpsn">-</strong>
+                            </div>
+                            <div class="flex justify-between py-1 border-b border-slate-50">
+                                <span class="text-slate-500">Akreditasi:</span>
+                                <strong class="text-emerald-600 font-bold" id="txtAkreditasi">-</strong>
+                            </div>
+                            <div class="flex justify-between py-1 border-b border-slate-50">
+                                <span class="text-slate-500">Kuota Penerimaan:</span>
+                                <strong class="text-muhBlue font-bold" id="txtKuota">-</strong>
+                            </div>
+                            <div class="flex justify-between py-1">
+                                <span class="text-slate-500">Biaya Pendaftaran:</span>
+                                <strong class="text-amber-600 font-bold" id="txtBiayaForm">-</strong>
+                            </div>
+                        </div>
+
+                        <div class="pt-2">
+                            <a href="#informasi" class="block w-full py-2.5 text-center bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-xl font-semibold text-xs transition-colors">
+                                Lihat Rincian Syarat & Jadwal &rarr;
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Keunggulan Section -->
+    <section id="keunggulan" class="py-16 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-muhGold font-bold text-xs uppercase tracking-wider">Mengapa Memilih Kami?</span>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-muhBlue mt-1">Keunggulan Pendidikan</h2>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Card 1 -->
+                <div class="p-6 bg-slate-50 rounded-2xl border border-slate-100 hover:shadow-lg transition-all">
+                    <div class="w-12 h-12 bg-blue-100 text-muhBlue rounded-xl flex items-center justify-center text-2xl font-bold mb-4">
+                        <i class="ph ph-book-open-text"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-800 text-base mb-2">Al-Islam & Kemuhammadiyahan</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">Pembentukan akhlaqul karimah dan karakter islami berlandaskan ajaran Muhammadiyah sejak dini.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="p-6 bg-slate-50 rounded-2xl border border-slate-100 hover:shadow-lg transition-all">
+                    <div class="w-12 h-12 bg-amber-100 text-amber-700 rounded-xl flex items-center justify-center text-2xl font-bold mb-4">
+                        <i class="ph ph-quran"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-800 text-base mb-2">Program Tahfizh Al-Qur'an</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">Bimbingan hafalan Juz 30 dan surat pilihan dengan metode baca Al-Qur'an yang sesuai tajwid.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="p-6 bg-slate-50 rounded-2xl border border-slate-100 hover:shadow-lg transition-all">
+                    <div class="w-12 h-12 bg-emerald-100 text-emerald-700 rounded-xl flex items-center justify-center text-2xl font-bold mb-4">
+                        <i class="ph ph-chalkboard-teacher"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-800 text-base mb-2">Guru Berdedikasi</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">Tenaga pendidik profesional yang sabar, ramah anak, dan aktif mengembangkan potensi siswa.</p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="p-6 bg-slate-50 rounded-2xl border border-slate-100 hover:shadow-lg transition-all">
+                    <div class="w-12 h-12 bg-purple-100 text-purple-700 rounded-xl flex items-center justify-center text-2xl font-bold mb-4">
+                        <i class="ph ph-trophy"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-800 text-base mb-2">Ekstrakurikuler Beragam</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">Kepanduan Hizbul Wathan (HW), Tapak Suci, seni baca Al-Qur'an, olahraga, dan lainnya.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeri Kegiatan Section (BARU) -->
+    <section id="galeri" class="py-16 bg-slate-50 border-t border-slate-100">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-10">
+                <span class="text-muhGold font-bold text-xs uppercase tracking-wider">Dokumentasi</span>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-muhBlue mt-1">Galeri Kegiatan Siswa</h2>
+                <p class="text-slate-500 text-xs sm:text-sm mt-1">Intip berbagai aktivitas positif siswa-siswi kami.</p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                
+                <!-- Foto 1: Tahfidz -->
+                <div class="group relative rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all aspect-square bg-slate-200">
+                    <!-- =========================================================
+                         GAMBAR 2: DOKUMENTASI TAHFIDZ
+                         Ganti isi atribut src dengan link foto kegiatan tahfidz 
+                         ========================================================= -->
+                    <img src="LINK_GAMBAR_TAHFIDZ_DISINI.jpg" alt="Kegiatan Tahfidz" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-muhBlue/90 via-muhBlue/20 to-transparent opacity-80"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-4 translate-y-2 group-hover:translate-y-0 transition-transform">
+                        <p class="text-white font-bold text-sm">Kegiatan Tahfidz</p>
+                        <p class="text-slate-200 text-xs opacity-0 group-hover:opacity-100 transition-opacity delay-100">Hafalan Juz 30</p>
+                    </div>
+                </div>
+
+                <!-- Foto 2: Sholat Berjamaah -->
+                <div class="group relative rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all aspect-square bg-slate-200">
+                    <!-- =========================================================
+                         GAMBAR 3: DOKUMENTASI SHOLAT BERJAMAAH / DHUHA
+                         Ganti isi atribut src dengan link foto kegiatan sholat 
+                         ========================================================= -->
+                    <img src="LINK_GAMBAR_SHOLAT_DISINI.jpg" alt="Sholat Berjamaah" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-muhBlue/90 via-muhBlue/20 to-transparent opacity-80"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-4 translate-y-2 group-hover:translate-y-0 transition-transform">
+                        <p class="text-white font-bold text-sm">Sholat Berjamaah</p>
+                        <p class="text-slate-200 text-xs opacity-0 group-hover:opacity-100 transition-opacity delay-100">Pembiasaan ibadah rutin</p>
+                    </div>
+                </div>
+
+                <!-- Foto 3: Ekstrakurikuler / Tapak Suci -->
+                <div class="group relative rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all aspect-square bg-slate-200">
+                    <!-- =========================================================
+                         GAMBAR 4: DOKUMENTASI TAPAK SUCI / EKSKUL LAIN
+                         Ganti isi atribut src dengan link foto kegiatan ekskul 
+                         ========================================================= -->
+                    <img src="LINK_GAMBAR_EKSKUL_DISINI.jpg" alt="Ekstrakurikuler" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-muhBlue/90 via-muhBlue/20 to-transparent opacity-80"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-4 translate-y-2 group-hover:translate-y-0 transition-transform">
+                        <p class="text-white font-bold text-sm">Tapak Suci / HW</p>
+                        <p class="text-slate-200 text-xs opacity-0 group-hover:opacity-100 transition-opacity delay-100">Ekstrakurikuler Unggulan</p>
+                    </div>
+                </div>
+
+                <!-- Foto 4: Belajar di Kelas -->
+                <div class="group relative rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all aspect-square bg-slate-200">
+                    <!-- =========================================================
+                         GAMBAR 5: DOKUMENTASI BELAJAR DI KELAS / KBM
+                         Ganti isi atribut src dengan link foto kegiatan belajar 
+                         ========================================================= -->
+                    <img src="LINK_GAMBAR_BELAJAR_DISINI.jpg" alt="Proses Belajar" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-muhBlue/90 via-muhBlue/20 to-transparent opacity-80"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-4 translate-y-2 group-hover:translate-y-0 transition-transform">
+                        <p class="text-white font-bold text-sm">Proses KBM</p>
+                        <p class="text-slate-200 text-xs opacity-0 group-hover:opacity-100 transition-opacity delay-100">Metode belajar interaktif</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Informasi PPDB Section -->
+    <section id="informasi" class="py-16 bg-white border-t border-slate-100">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-muhGold font-bold text-xs uppercase tracking-wider">Panduan Lengkap</span>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-muhBlue mt-1">Jadwal & Syarat Pendaftaran</h2>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                
+                <!-- Gelombang Pendaftaran -->
+                <div class="bg-slate-50 rounded-3xl p-6 sm:p-8 card-shadow border border-slate-100 space-y-4">
+                    <h3 class="text-lg font-bold text-muhBlue flex items-center gap-2">
+                        <i class="ph ph-calendar-blank text-2xl text-muhGold"></i>
+                        <span>Jadwal Gelombang Pendaftaran</span>
+                    </h3>
+
+                    <div id="listGelombang" class="space-y-3 pt-2">
+                        <!-- Data dimasukkan via Javascript di bawah -->
+                    </div>
+                </div>
+
+                <!-- Persyaratan Berkas -->
+                <div class="bg-slate-50 rounded-3xl p-6 sm:p-8 card-shadow border border-slate-100 space-y-4">
+                    <h3 class="text-lg font-bold text-muhBlue flex items-center gap-2">
+                        <i class="ph ph-files text-2xl text-muhGold"></i>
+                        <span>Persyaratan Berkas (Fotokopi)</span>
+                    </h3>
+
+                    <ul id="listSyarat" class="space-y-2.5 text-xs sm:text-sm text-slate-700 pt-2">
+                        <!-- Data dimasukkan via Javascript di bawah -->
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulir Pendaftaran Section -->
+    <section id="formulir" class="py-16 bg-slate-100">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-10">
+                <span class="text-muhGold font-bold text-xs uppercase tracking-wider">Formulir Online</span>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-muhBlue mt-1">Daftarkan Calon Siswa Baru</h2>
+                <p class="text-slate-500 text-xs sm:text-sm mt-1">Isi data di bawah ini secara lengkap. Berkas juga dapat diupload secara online.</p>
+            </div>
+
+            <div class="max-w-3xl mx-auto bg-white rounded-3xl p-6 sm:p-10 border border-slate-200 card-shadow">
+                
+                <!-- PERHATIAN: Atribut enctype="multipart/form-data" wajib ada jika ada upload file (foto) -->
+                <form id="formPpdb" onsubmit="simpanPendaftaran(event)" enctype="multipart/form-data">
+                    
+                    <!-- Section 1: Data Calon Siswa -->
+                    <div class="space-y-4 pb-6 border-b border-slate-200">
+                        <h3 class="text-base font-bold text-muhBlue flex items-center gap-2">
+                            <span class="w-7 h-7 rounded-lg bg-muhBlue text-white flex items-center justify-center text-xs">1</span>
+                            Data Calon Siswa
+                        </h3>
+
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <div class="sm:col-span-2">
+                                <label class="block text-xs font-bold text-slate-700 mb-1">Nama Lengkap Siswa *</label>
+                                <input type="text" id="inNamaSiswa" name="namaSiswa" required placeholder="Sesuai Akta Kelahiran" class="w-full px-4 py-2.5 text-sm rounded-xl border border-slate-300 focus:ring-2 focus:ring-muhBlue focus:outline-none bg-slate-50">
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 mb-1">NIK Siswa (Kartu Keluarga) *</label>
+                                <input type="number" id="inNikSiswa" name="nikSiswa" required placeholder="16 Digit NIK" class="w-full px-4 py-2.5 text-sm rounded-xl border border-slate-300 focus:ring-2 focus:ring-muhBlue focus:outline-none bg-slate-50">
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 mb-1">Jenis Kelamin *</label>
+                                <select id="inJkel" name="jenisKelamin" required class="w-full px-4 py-2.5 text-sm rounded-xl border border-slate-300 focus:ring-2 focus:ring-muhBlue focus:outline-none bg-slate-50">
+                                    <option value="">-- Pilih --</option>
+                                    <option value="Laki-laki">Laki-laki</option>
+                                    <option value="Perempuan">Perempuan</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 mb-1">Tempat Lahir *</label>
+                                <input type="text" id="inTempatLahir" name="tempatLahir" required placeholder="Contoh: Melak" class="w-full px-4 py-2.5 text-sm rounded-xl border border-slate-300 focus:ring-2 focus:ring-muhBlue focus:outline-none bg-slate-50">
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 mb-1">Tanggal Lahir *</label>
+                                <input type="date" id="inTglLahir" name="tglLahir" required class="w-full px-4 py-2.5 text-sm rounded-xl border border-slate-300 focus:ring-2 focus:ring-muhBlue focus:outline-none bg-slate-50">
+                            </div>
+
+                            <div class="sm:col-span-2">
+                                <label class="block text-xs font-bold text-slate-700 mb-1">Asal TK / RA / PAUD</label>
+                                <input type="text" id="inAsalSekolah" name="asalSekolah" placeholder="Contoh: TK ABA Melak" class="w-full px-4 py-2.5 text-sm rounded-xl border border-slate-300 focus:ring-2 focus:ring-muhBlue focus:outline-none bg-slate-50">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Section 2: Data Orang Tua / Wali -->
+                    <div class="space-y-4 py-6 border-b border-slate-200">
+                        <h3 class="text-base font-bold text-muhBlue flex items-center gap-2">
+                            <span class="w-7 h-7 rounded-lg bg-muhBlue text-white flex items-center justify-center text-xs">2</span>
+                            Data Orang Tua / Wali
+                        </h3>
+
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 mb-1">Nama Ayah / Wali *</label>
+                                <input type="text" id="inNamaAyah" name="namaAyah" required placeholder="Nama Lengkap" class="w-full px-4 py-2.5 text-sm rounded-xl border border-slate-300 focus:ring-2 focus:ring-muhBlue focus:outline-none bg-slate-50">
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 mb-1">Nama Ibu *</label>
+                                <input type="text" id="inNamaIbu" name="namaIbu" required placeholder="Nama Lengkap" class="w-full px-4 py-2.5 text-sm rounded-xl border border-slate-300 focus:ring-2 focus:ring-muhBlue focus:outline-none bg-slate-50">
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 mb-1">No. WhatsApp / HP Aktif *</label>
+                                <input type="tel" id="inWa" name="noWa" required placeholder="0812xxxxxxxx" class="w-full px-4 py-2.5 text-sm rounded-xl border border-slate-300 focus:ring-2 focus:ring-muhBlue focus:outline-none bg-slate-50">
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 mb-1">Pekerjaan Utama Ortu</label>
+                                <input type="text" id="inPekerjaan" name="pekerjaanOrtu" placeholder="Swasta / PNS / Wiraswasta" class="w-full px-4 py-2.5 text-sm rounded-xl border border-slate-300 focus:ring-2 focus:ring-muhBlue focus:outline-none bg-slate-50">
+                            </div>
+
+                            <div class="sm:col-span-2">
+                                <label class="block text-xs font-bold text-slate-700 mb-1">Alamat Rumah Lengkap *</label>
+                                <textarea id="inAlamat" name="alamatLengkap" rows="2" required placeholder="Nama Jalan, RT, Kelurahan, Kecamatan" class="w-full px-4 py-2.5 text-sm rounded-xl border border-slate-300 focus:ring-2 focus:ring-muhBlue focus:outline-none bg-slate-50"></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Section 3: Upload Berkas (BARU DITAMBAHKAN) -->
+                    <div class="space-y-4 py-6 border-b border-slate-200">
+                        <h3 class="text-base font-bold text-muhBlue flex items-center gap-2">
+                            <span class="w-7 h-7 rounded-lg bg-muhBlue text-white flex items-center justify-center text-xs">3</span>
+                            Upload Berkas (Bisa Menyusul)
+                        </h3>
+                        <p class="text-xs text-amber-600 mb-2 font-medium">Format: JPG, PNG, atau PDF (Maksimal 2MB per file).</p>
+
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <!-- Input File Kartu Keluarga -->
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 mb-1">Foto Kartu Keluarga (KK)</label>
+                                <input type="file" name="fileKK" accept=".jpg,.jpeg,.png,.pdf" class="w-full text-xs text-slate-500 file:mr-4 file:py-2 file:px-4 file:rounded-xl file:border-0 file:text-xs file:font-semibold file:bg-blue-50 file:text-muhBlue hover:file:bg-blue-100 cursor-pointer border border-slate-300 rounded-xl bg-slate-50">
+                            </div>
+                            
+                            <!-- Input File Akta Kelahiran -->
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 mb-1">Foto Akta Kelahiran</label>
+                                <input type="file" name="fileAkta" accept=".jpg,.jpeg,.png,.pdf" class="w-full text-xs text-slate-500 file:mr-4 file:py-2 file:px-4 file:rounded-xl file:border-0 file:text-xs file:font-semibold file:bg-blue-50 file:text-muhBlue hover:file:bg-blue-100 cursor-pointer border border-slate-300 rounded-xl bg-slate-50">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="pt-6 text-right">
+                        <button type="submit" id="btnSubmitForm" class="w-full sm:w-auto bg-muhGold hover:bg-muhGoldDark text-white font-bold px-8 py-3 rounded-xl shadow-md transition-all flex items-center justify-center gap-2">
+                            <i id="iconSubmit" class="ph ph-paper-plane-right text-lg"></i>
+                            <span id="textSubmit">Kirim Pendaftaran</span>
+                        </button>
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Cek Status Pendaftaran Section -->
+    <section id="cek-status" class="py-16 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-2xl mx-auto bg-slate-50 rounded-3xl p-6 sm:p-8 card-shadow border border-slate-200 text-center">
+                <div class="w-12 h-12 bg-amber-100 text-muhGoldDark rounded-2xl flex items-center justify-center mx-auto mb-3 text-2xl font-bold">
+                    <i class="ph ph-magnifying-glass"></i>
+                </div>
+                <h2 class="text-2xl font-bold text-muhBlue">Cek Status Pendaftaran</h2>
+                <p class="text-slate-500 text-xs sm:text-sm mt-1">Masukkan No. Registrasi (Contoh: <code class="bg-amber-100 text-amber-900 px-1.5 py-0.5 rounded">PPDB-001</code>) atau Nama Siswa.</p>
+
+                <div class="mt-6 flex flex-col sm:flex-row gap-2 max-w-md mx-auto">
+                    <input type="text" id="inCekKode" placeholder="Masukkan Kode / Nama..." class="flex-1 px-4 py-2.5 text-sm rounded-xl border border-slate-300 focus:ring-2 focus:ring-muhBlue focus:outline-none bg-white">
+                    <button onclick="cariStatus()" class="bg-muhBlue hover:bg-muhBlueLight text-white font-bold px-6 py-2.5 rounded-xl transition-all flex items-center justify-center gap-1.5 text-sm">
+                        <span>Cari</span>
+                    </button>
+                </div>
+
+                <div id="boxHasilCek" class="hidden mt-6 text-left p-4 rounded-2xl text-xs sm:text-sm border">
+                    <!-- Dynamic Result -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-muhBlue text-white pt-12 pb-8 border-t border-blue-900">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8 text-xs sm:text-sm">
+                
+                <!-- Col 1 -->
+                <div class="space-y-3">
+                    <div class="flex items-center gap-2">
+                        <i class="ph ph-sun text-2xl text-muhGold"></i>
+                        <h3 class="font-extrabold text-base text-white">SD Muhammadiyah 001 Melak</h3>
+                    </div>
+                    <p class="text-slate-300 leading-relaxed" id="txtFooterAlamat">
+                        <!-- Alamat akan otomatis terisi dari Javascript -->
+                    </p>
+                </div>
+
+                <!-- Col 2 -->
+                <div class="space-y-2">
+                    <h4 class="font-bold text-muhGold uppercase tracking-wider text-xs">Kontak Panitia</h4>
+                    <p class="text-slate-300 flex items-center gap-2">
+                        <i class="ph ph-phone text-base text-muhGold"></i>
+                        <span id="txtFooterTelp">-</span>
+                    </p>
+                    <p class="text-slate-300 flex items-center gap-2">
+                        <i class="ph ph-envelope text-base text-muhGold"></i>
+                        <span id="txtFooterEmail">-</span>
+                    </p>
+                </div>
+
+                <!-- Col 3 -->
+                <div class="space-y-2">
+                    <h4 class="font-bold text-muhGold uppercase tracking-wider text-xs">Pendidikan Muhammadiyah</h4>
+                    <p class="text-slate-300 leading-relaxed">
+                        Mewujudkan pendidikan SD berasaskan Nilai Islam, Unggul Prestasi, dan Berkarakter Muhammadiyah.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="border-t border-blue-900/60 pt-6 text-center text-xs text-slate-400">
+                <p>&copy; 2026 SD Muhammadiyah 001 Melak. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal Bukti Pendaftaran (Pop Up) -->
+    <div id="modalBukti" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-3xl max-w-md w-full p-6 card-shadow space-y-4">
+            <div class="text-center">
+                <div class="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mx-auto mb-2 text-2xl font-bold">
+                    <i class="ph ph-check-circle-fill"></i>
+                </div>
+                <h3 class="text-xl font-bold text-muhBlue">Pendaftaran Berhasil!</h3>
+                <p class="text-xs text-slate-500">Silakan tangkap layar (screenshot) bukti registrasi Anda di bawah ini.</p>
+            </div>
+
+            <div class="bg-slate-50 p-4 rounded-2xl border border-slate-200 text-xs space-y-2 text-slate-700">
+                <div class="flex justify-between border-b pb-1.5">
+                    <span class="text-slate-500">No. Registrasi:</span>
+                    <strong id="mKode" class="font-mono text-muhGoldDark text-sm">PPDB-000</strong>
+                </div>
+                <div class="flex justify-between">
+                    <span class="text-slate-500">Nama Siswa:</span>
+                    <strong id="mNama">-</strong>
+                </div>
+                <div class="flex justify-between">
+                    <span class="text-slate-500">Orang Tua:</span>
+                    <span id="mOrtu">-</span>
+                </div>
+                <div class="flex justify-between">
+                    <span class="text-slate-500">Tanggal Daftar:</span>
+                    <span id="mTgl">-</span>
+                </div>
+            </div>
+            
+            <p class="text-[11px] text-center text-amber-700 bg-amber-50 p-2 rounded-lg font-medium border border-amber-200">
+                *Tunjukkan nomor ini saat menyerahkan berkas fisik (fotokopi) ke sekolah atau konfirmasi ke WA Panitia.
+            </p>
+
+            <div class="flex gap-2 pt-2">
+                <button onclick="window.print()" class="flex-1 py-2.5 bg-muhBlue hover:bg-muhBlueLight text-white rounded-xl font-bold text-xs flex items-center justify-center gap-1.5">
+                    <i class="ph ph-printer text-base"></i> Cetak/Simpan PDF
+                </button>
+                <button onclick="tutupModal()" class="px-5 py-2.5 bg-slate-200 hover:bg-slate-300 text-slate-700 rounded-xl font-semibold text-xs">
+                    Tutup
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script Javascript & Konfigurasi Data -->
+    <script>
+        /* =========================================================================
+           DATA SEKOLAH (SILAKAN UBAH TEKS DI DALAM TANDA KUTIP SESUAI DATA ASLI)
+           ========================================================================= */
+        const sekolahData = {
+            namaSekolah: "SD Muhammadiyah 001 Melak",
+            npsn: "30405647", // Isi NPSN asli
+            akreditasi: "B (Terakreditasi)",
+            alamat: "Jl. Ahmad Yani RT.14 Kel. Melak Ulu, Kec. Melak, Kab. Kutai Barat, Kaltim",
+            telepon: "081234567890", // GANTI INI: No WA Panitia (Hanya angka, mulai dari 0 atau 62, jangan pakai spasi/strip)
+            email: "sdmuhammadiyahmelak@gmail.com",
+            kuota: "60 Siswa Baru (2 Rombel)",
+            biayaFormulir: "Rp 150.000",
+            
+            // JADWAL GELOMBANG BISA DITAMBAH/DIKURANGI
+            gelombang: [
+                { nama: "Gelombang I", tgl: "02 Januari - 31 Maret 2026", status: "Buka" },
+                { nama: "Gelombang II", tgl: "01 April - 30 Juni 2026", status: "Mendatang" }
+            ],
+            
+            // SYARAT BISA DITAMBAH/DIKURANGI
+            persyaratan: [
+                "Fotokopi Akta Kelahiran (2 Lembar)",
+                "Fotokopi Kartu Keluarga / KK (2 Lembar)",
+                "Fotokopi KTP Orang Tua / Wali (2 Lembar)",
+                "Pasfoto Ukuran 3x4 Background Merah (4 Lembar)",
+                "Surat Keterangan Lulus TK / PAUD (1 Lembar) - Jika ada"
+            ]
+        };
+
+        // ---------------------------------------------------------------------------------
+        // PERHATIAN UNTUK PROGRAMMER / ADMIN:
+        // Variabel pendaftaranDatabase ini HANYA UNTUK SIMULASI di Browser.
+        // Jika website sudah dionlinekan, hapus script ini dan hubungkan formHTML di atas 
+        // dengan sistem Backend sungguhan (Google Sheets API / PHP MySQL).
+        // ---------------------------------------------------------------------------------
+        
+        // KONFIGURASI GOOGLE APPS SCRIPT (BACKEND)
+        // Nanti ganti teks di bawah dengan Link Web App Google Script Anda
+        const GOOGLE_SCRIPT_URL = 'URL_WEB_APP_GOOGLE_SCRIPT_ANDA_DISINI';
+
+        let pendaftaranDatabase = [
+            { kode: "PPDB-001", nama: "Ahmad Rizky", ortu: "Budi Santoso", status: "Diterima (Berkas Lengkap)" },
+            { kode: "PPDB-002", nama: "Siti Aisyah", ortu: "Ahmad Dahlan", status: "Menunggu Verifikasi Berkas" }
+        ];
+
+        // Menerapkan Data ke Layar saat Halaman Dibuka
+        window.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('txtNamaSekolah').innerText = sekolahData.namaSekolah;
+            document.getElementById('txtNpsn').innerText = sekolahData.npsn;
+            document.getElementById('txtAkreditasi').innerText = sekolahData.akreditasi;
+            document.getElementById('txtAlamatSekolah').innerText = sekolahData.alamat;
+            document.getElementById('txtKuota').innerText = sekolahData.kuota;
+            document.getElementById('txtBiayaForm').innerText = sekolahData.biayaFormulir;
+            document.getElementById('txtFooterAlamat').innerText = sekolahData.alamat;
+            
+            // Buat tampilan nomor HP jadi ada strip (0812-3456-7890) agar enak dibaca
+            let displayTelp = sekolahData.telepon.replace(/(\d{4})(\d{4})(\d+)/, '$1-$2-$3');
+            document.getElementById('txtFooterTelp').innerText = displayTelp;
+            document.getElementById('txtFooterEmail').innerText = sekolahData.email;
+
+            // Generate Link WhatsApp Otomatis
+            const cleanPhone = sekolahData.telepon.replace(/[^0-9]/g, '');
+            const waNumber = cleanPhone.startsWith('0') ? '62' + cleanPhone.slice(1) : cleanPhone;
+            const pesanWa = encodeURIComponent("Assalamu'alaikum Panitia PPDB SD Muhammadiyah 001 Melak, saya ingin bertanya seputar pendaftaran.");
+            document.getElementById('btnWaHero').href = `https://wa.me/${waNumber}?text=${pesanWa}`;
+
+            // Menampilkan Gelombang
+            const boxGel = document.getElementById('listGelombang');
+            boxGel.innerHTML = sekolahData.gelombang.map(g => `
+                <div class="p-3 bg-white rounded-xl border border-slate-200 flex items-center justify-between">
+                    <div>
+                        <strong class="text-xs sm:text-sm text-slate-800 block">${g.nama}</strong>
+                        <span class="text-xs text-slate-500">${g.tgl}</span>
+                    </div>
+                    <span class="px-2.5 py-1 rounded-full text-[10px] font-bold ${g.status === 'Buka' ? 'bg-emerald-100 text-emerald-800' : 'bg-slate-200 text-slate-600'}">
+                        ${g.status}
+                    </span>
+                </div>
+            `).join('');
+
+            // Menampilkan Syarat
+            const boxSyarat = document.getElementById('listSyarat');
+            boxSyarat.innerHTML = sekolahData.persyaratan.map(s => `
+                <li class="flex items-start gap-2">
+                    <i class="ph ph-check-circle text-emerald-600 text-base shrink-0 mt-0.5"></i>
+                    <span>${s}</span>
+                </li>
+            `).join('');
+
+            // Logika Tombol Menu Mobile
+            document.getElementById('menuToggle').addEventListener('click', () => {
+                document.getElementById('mobileDrawer').classList.toggle('hidden');
+            });
+        });
+
+        // Logika Menyimpan Pendaftaran ke Google Drive (Integrasi Backend)
+        async function simpanPendaftaran(e) {
+            e.preventDefault();
+
+            const form = e.target;
+            const btnSubmit = document.getElementById('btnSubmitForm');
+            const textSubmit = document.getElementById('textSubmit');
+            const iconSubmit = document.getElementById('iconSubmit');
+
+            // 1. Ubah tombol jadi status Loading
+            btnSubmit.disabled = true;
+            btnSubmit.classList.add('opacity-70', 'cursor-not-allowed');
+            textSubmit.innerText = "Mengunggah Data...";
+            iconSubmit.className = "ph ph-spinner-gap animate-spin text-lg";
+
+            try {
+                // Ambil semua data teks dari form
+                const formData = new FormData(form);
+                const dataObj = Object.fromEntries(formData.entries());
+
+                // Fungsi bantu untuk mengubah File Gambar menjadi teks Base64 agar bisa dikirim
+                const getBase64 = (file) => new Promise((resolve, reject) => {
+                    const reader = new FileReader();
+                    reader.readAsDataURL(file);
+                    reader.onload = () => resolve(reader.result.split(',')[1]);
+                    reader.onerror = error => reject(error);
+                });
+
+                // Proses file KK (jika diupload)
+                const fileKK = form.querySelector('input[name="fileKK"]').files[0];
+                if (fileKK) {
+                    dataObj.fileKK_name = fileKK.name;
+                    dataObj.fileKK_mimeType = fileKK.type;
+                    dataObj.fileKK_base64 = await getBase64(fileKK);
+                }
+
+                // Proses file Akta (jika diupload)
+                const fileAkta = form.querySelector('input[name="fileAkta"]').files[0];
+                if (fileAkta) {
+                    dataObj.fileAkta_name = fileAkta.name;
+                    dataObj.fileAkta_mimeType = fileAkta.type;
+                    dataObj.fileAkta_base64 = await getBase64(fileAkta);
+                }
+
+                // 2. Kirim ke Google Apps Script
+                if (GOOGLE_SCRIPT_URL === 'URL_WEB_APP_GOOGLE_SCRIPT_ANDA_DISINI') {
+                    alert("PERINGATAN: Sistem belum dihubungkan ke Google Drive. Silakan ikuti panduan Google Apps Script terlebih dahulu.");
+                    throw new Error("URL Google Script belum diatur.");
+                }
+
+                const response = await fetch(GOOGLE_SCRIPT_URL, {
+                    method: 'POST',
+                    body: JSON.stringify(dataObj)
+                });
+
+                const result = await response.json();
+
+                if (result.result === "success") {
+                    // Tampilkan Data ke Modal Sukses
+                    document.getElementById('mKode').innerText = result.kode;
+                    document.getElementById('mNama').innerText = result.nama;
+                    document.getElementById('mOrtu').innerText = result.ortu;
+                    document.getElementById('mTgl').innerText = new Date().toLocaleDateString('id-ID');
+
+                    // Simpan sementara ke database lokal browser agar fitur 'Cek Status' jalan
+                    pendaftaranDatabase.push({
+                        kode: result.kode,
+                        nama: result.nama,
+                        ortu: result.ortu,
+                        status: "Menunggu Verifikasi Berkas (Google Drive)"
+                    });
+
+                    // Buka Modal & Kosongkan form
+                    document.getElementById('modalBukti').classList.remove('hidden');
+                    form.reset();
+                } else {
+                    alert("Gagal mengirim data. Error: " + result.error);
+                }
+
+            } catch (error) {
+                console.error(error);
+                // Jika error karena CORS (biasa terjadi saat awal setting Google Script)
+                if(error.message.includes("Failed to fetch") || error.message.includes("NetworkError")) {
+                    alert("Gagal terhubung. Pastikan Web App Google Script di-deploy dengan akses 'Anyone' (Siapa Saja).");
+                }
+            } finally {
+                // 3. Kembalikan tombol seperti semula
+                btnSubmit.disabled = false;
+                btnSubmit.classList.remove('opacity-70', 'cursor-not-allowed');
+                textSubmit.innerText = "Kirim Pendaftaran";
+                iconSubmit.className = "ph ph-paper-plane-right text-lg";
+            }
+        }
+
+        // Tutup Modal Pop Up
+        function tutupModal() {
+            document.getElementById('modalBukti').classList.add('hidden');
+        }
+
+        // Logika Cari Status
+        function cariStatus() {
+            const query = document.getElementById('inCekKode').value.trim().toLowerCase();
+            const resultBox = document.getElementById('boxHasilCek');
+
+            if(!query) {
+                resultBox.className = "mt-6 text-left p-4 rounded-2xl text-xs sm:text-sm border bg-amber-50 border-amber-200 text-amber-800";
+                resultBox.innerText = "Harap masukkan No. Kode Registrasi atau Nama Siswa!";
+                resultBox.classList.remove('hidden');
+                return;
+            }
+
+            const temukan = pendaftaranDatabase.find(d => 
+                d.kode.toLowerCase().includes(query) || d.nama.toLowerCase().includes(query)
+            );
+
+            resultBox.classList.remove('hidden');
+            if(temukan) {
+                resultBox.className = "mt-6 text-left p-4 rounded-2xl text-xs sm:text-sm border bg-emerald-50 border-emerald-200 text-emerald-900";
+                resultBox.innerHTML = `
+                    <p class="font-bold text-sm text-emerald-950">${temukan.nama} (${temukan.kode})</p>
+                    <p class="text-xs text-emerald-700 mt-1">Nama Orang Tua/Wali: <strong>${temukan.ortu}</strong></p>
+                    <div class="mt-2 inline-block px-2.5 py-1 bg-emerald-200 text-emerald-900 rounded font-bold text-xs">
+                        Status: ${temukan.status}
+                    </div>
+                `;
+            } else {
+                resultBox.className = "mt-6 text-left p-4 rounded-2xl text-xs sm:text-sm border bg-slate-50 border-slate-300 text-slate-700";
+                resultBox.innerHTML = `Data dengan kata kunci "<strong>${query}</strong>" tidak ditemukan. Pastikan Anda sudah mengisi formulir online atau hubungi panitia via WA.`;
+            }
+        }
+    </script>
+</body>
+</html>
